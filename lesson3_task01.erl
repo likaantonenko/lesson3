@@ -6,6 +6,6 @@ reverse([],S)-> S;
 reverse([H|T], S)->reverse(T,[H|S]).
 
 first_word(L) -> first_word(L, []).
-first_word([], S) -> S;
-first_word([32|_], S) -> S;
+first_word([], S) -> reverse(S);
+first_word([32|_], S) -> reverse(S);
 first_word([H|T], S) -> first_word(T, [H|S]).
