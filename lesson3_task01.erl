@@ -1,4 +1,4 @@
--module(lesson3_task02).
+-module(lesson3_task01).
 -export([reverse/1, reverse/2, first_word/1, first_word/2]).
 
 reverse(L)->reverse(L,[]).
